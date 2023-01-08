@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript function</title>
+    <style>
+ body{
+   background-color: rgba(30, 236, 30, 0.473);
+ }
+div{
+    height: 400px;
+    width: 600px;
+    margin-top: 5%;
+   
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 3px;
+    background-color: rgba(33, 97, 235, 0.548);
+}
+*{text-align: center;}
+button:hover{
+    background-color: blueviolet;
+    font-size: 20px;
+}
+input{box-sizing: border-box green;
+box-shadow: 3px black;}
+
+    
+
+input:hover{
+    font-size: 20px;
+    background-color: rgb(14, 245, 156);
+}
+   h1{
+    background-color: rgb(243, 239, 14);
+   }
+    #calculator{
+background-color: rgb(255, 187, 0);
+font-size: 15px;
+    }
+    
+    button{padding: 20px;}
+    </style>
+</head>
+<body><h1>java script function </h1>
+   <p id="calculator" style="font-size: 20px;"> mini calculator</p>
+   <br><br>
+    <script>
+      var day=new Date();
+document.writeln(day);
+
+        //addition:
+
+        function add(){
+            var x,y,z;
+            x=Number(document.getElementById("1").value);
+            y=Number(document.getElementById("2").value);
+            z=x+y;
+            (document.getElementById("3").value = z);}
+
+            //multiophlication:
+
+            function mul(){
+            var x,y,z;
+            x=Number(document.getElementById("1").value);
+            y=Number(document.getElementById("2").value);
+            z=x*y;
+            (document.getElementById("3").value = z);}
+           
+            //subtarction:
+
+            function sub(){
+            var x,y,z;
+            x=Number(document.getElementById("1").value);
+            y=Number(document.getElementById("2").value);
+            z=x-y;
+            (document.getElementById("3").value = z);
+            } 
+
+            //divition:
+            
+             function divi(){
+            var x,y,z;
+            x=Number(document.getElementById("1").value);
+            y=Number(document.getElementById("2").value);
+            z=x / y;
+            (document.getElementById("3").value = z);
+        }
+
+      //module:
+
+      function mod(){
+            var x,y,z;
+            x=Number(document.getElementById("1").value);
+            y=Number(document.getElementById("2").value);
+            z=x % y;
+            (document.getElementById("3").value = z);
+        }
+        
+    </script>
+   <div>
+    <hr><p style="background-color: rgb(60, 255, 0);"> Mini caluculator</p> <hr><br><br>
+   <form> 
+    <strong> Enter first number : </strong><input id="1" size="10px"><br><br>
+    <strong>Enter secound number :</strong><input id="2" size="8px"><br><br><br>
+    <input type="reset"  value="clear all"><br><br>
+</form>
+    <button onclick="add()">[  +  ]</button>
+    <button onclick="sub()">[  -  ]</button>
+    <button onclick="mul()">[  *  ]</button>
+    <button onclick="divi()">[  /  ]</button>
+    <button onclick="mod()">[  %  ]</button><br><br>
+    answer box :
+    <input id="3"
+    placeholder="answer"></input><br>
+
+   </div>
+</body>
+</html>
